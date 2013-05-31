@@ -16,5 +16,6 @@ describe 'explicitly convertable null object' do
     expect(null.to_c).to eq(Complex(0))
     expect(null.to_r).to eq(Rational(0))
     expect(null.to_h).to eq({})
+    expect(null.to_json).to eq('null')
   end
 end
